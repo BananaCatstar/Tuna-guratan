@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+/* サイト全体のヘッダー */
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background-color: #5b3a29;
+    color: #fff;
+}
+
+.site-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.site-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0 20px 20px;
+}
+.hero-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.cookingpad {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cookingpad.zairyo {
+    flex: 0 0 300px;
+}
+
+.cookingpad.tsukurikata {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ボタン */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+}
+
+/* スマホ：縦並び */
+@media (max-width: 700px) {
+    .cookingpad.zairyo {
+        flex: 1 1 100%;
+    }
+}
